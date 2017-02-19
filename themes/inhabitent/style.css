@@ -699,6 +699,10 @@ body {
   font-size: 16px;
   font-family: 'Merriweather Web'; }
 
+h2 {
+  font-family: 'NovecentoSans';
+  line-height: 1.25; }
+
 .container {
   width: 1120px;
   display: -ms-flexbox;
@@ -744,6 +748,43 @@ body {
 .footer-content div {
   margin: 3rem 0; }
 
+.blog .site-content {
+  padding-top: 55px; }
+
 .blog-wrapper {
   display: -ms-flexbox;
   display: flex; }
+
+#primary {
+  width: 71%;
+  padding: 3rem 3.5rem 0 0;
+  border-right: 1px solid grey; }
+
+#secondary {
+  width: 29%;
+  padding: 3rem 0 0 3.5rem; }
+
+.entry-header {
+  position: relative;
+  line-height: 0;
+  color: #fff; }
+
+.entry-title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #248a83;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  width: 74%; }
+  .entry-title a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase; }
+
+.entry-meta {
+  position: absolute;
+  background-color: #248a83;
+  padding: 1rem;
+  bottom: 0;
+  right: 0; }
