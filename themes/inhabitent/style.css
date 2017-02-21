@@ -699,9 +699,21 @@ body {
   font-size: 16px;
   font-family: 'Merriweather Web'; }
 
+h1 {
+  font-family: 'NovecentoSans';
+  font-size: 3rem;
+  letter-spacing: 2px; }
+
 h2 {
   font-family: 'NovecentoSans';
-  line-height: 1.25; }
+  line-height: 1.25;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+a {
+  color: #248a83;
+  text-decoration: none; }
 
 .container {
   width: 1120px;
@@ -718,6 +730,29 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto; }
+
+.site-content {
+  padding-top: 55px; }
+
+#primary {
+  width: 73%;
+  padding: 3rem 3.5rem 0 0;
+  border-right: 1px solid grey; }
+
+#secondary {
+  width: 27%;
+  padding: 3rem 0 0 3.5rem; }
+
+.entry-title {
+  margin-top: 0; }
+
+.widget h2 {
+  font-size: 1.5rem; }
+
+.widget ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0; }
 
 .home-hero {
   background: url(../../images/logos/inhabitent-logo-full.svg) no-repeat center center, linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../../images/home-hero.jpg) no-repeat center bottom;
@@ -772,21 +807,9 @@ h2 {
 .footer-content div {
   margin: 3rem 0; }
 
-.blog .site-content {
-  padding-top: 55px; }
-
 .blog .blog-wrapper {
   display: -ms-flexbox;
   display: flex; }
-
-.blog #primary {
-  width: 71%;
-  padding: 3rem 3.5rem 0 0;
-  border-right: 1px solid grey; }
-
-.blog #secondary {
-  width: 29%;
-  padding: 3rem 0 0 3.5rem; }
 
 .blog .entry-header {
   position: relative;
@@ -799,8 +822,8 @@ h2 {
   top: 0;
   background-color: #248a83;
   padding: 1rem 1.5rem;
-  font-size: 2rem;
-  width: 74%; }
+  width: 74%;
+  margin-top: 2.25rem; }
   .blog .entry-title a {
     text-decoration: none;
     color: #fff;

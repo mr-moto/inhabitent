@@ -2,9 +2,21 @@ body{
     font-size: 16px;
     font-family: 'Merriweather Web';
 }
+h1{
+    font-family:'NovecentoSans';
+    font-size: 3rem;
+        letter-spacing: 2px;
+}
 h2{
     font-family: 'NovecentoSans';
     line-height: 1.25;
+    font-size: 2rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+}
+a {
+    color: #248a83;
+    text-decoration: none;
 }
 .container{
     width: 1120px;
@@ -17,4 +29,27 @@ h2{
     width: 1120px;
     display: flex;
     margin: 0 auto;
+}
+.site-content{
+    padding-top: 55px;
+}
+#primary{
+    width: 73%;
+    padding: 3rem 3.5rem 0 0;
+    border-right: 1px solid grey;
+}
+#secondary{
+    width: 27%;
+    padding: 3rem 0 0 3.5rem;
+}
+.entry-title{
+    margin-top: 0;
+}
+.widget h2{
+    font-size: 1.5rem;
+}
+.widget ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
 }
