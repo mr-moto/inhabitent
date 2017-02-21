@@ -742,6 +742,30 @@ h2 {
 .logo {
   width: 50px; }
 
+.page-id-22 .entry-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../../images/about-hero.jpg) no-repeat center bottom;
+  background-size: cover, cover;
+  height: 100vh; }
+
+.page-id-22 h1 {
+  color: #fff;
+  font-family: 'NovecentoSans';
+  font-size: 3rem;
+  text-transform: uppercase; }
+
+.page-id-22 .entry-content {
+  max-width: 800px;
+  margin: 3rem auto 4rem; }
+  .page-id-22 .entry-content h2 {
+    font-size: 2.5rem;
+    text-align: center; }
+
 #colophon {
   background: url(../../images/dark-wood.png); }
 
@@ -751,25 +775,25 @@ h2 {
 .blog .site-content {
   padding-top: 55px; }
 
-.blog-wrapper {
+.blog .blog-wrapper {
   display: -ms-flexbox;
   display: flex; }
 
-#primary {
+.blog #primary {
   width: 71%;
   padding: 3rem 3.5rem 0 0;
   border-right: 1px solid grey; }
 
-#secondary {
+.blog #secondary {
   width: 29%;
   padding: 3rem 0 0 3.5rem; }
 
-.entry-header {
+.blog .entry-header {
   position: relative;
   line-height: 0;
   color: #fff; }
 
-.entry-title {
+.blog .entry-title {
   position: absolute;
   left: 0;
   top: 0;
@@ -777,12 +801,12 @@ h2 {
   padding: 1rem 1.5rem;
   font-size: 2rem;
   width: 74%; }
-  .entry-title a {
+  .blog .entry-title a {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase; }
 
-.entry-meta {
+.blog .entry-meta {
   position: absolute;
   background-color: #248a83;
   padding: 1rem;
