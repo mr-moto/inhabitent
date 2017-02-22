@@ -1,5 +1,10 @@
 .page-id-22{
-    .entry-header{
+    #primary{
+    width: 100%;
+    padding: 0;
+    border-right: none;
+    }
+    .about_hero_banner{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -13,7 +18,7 @@
         font-size: 3rem;
         text-transform: uppercase;
     }
-    .entry-content{
+    .about_text{
         max-width: 800px;
         margin: 3rem auto 4rem;
         h2{

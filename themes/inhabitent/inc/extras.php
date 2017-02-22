@@ -40,3 +40,13 @@ function admin_logo_url( $url ) {
 }
 add_filter( 'login_headerurl', 'admin_logo_url' );
 
+/**
+ * Changing product archive title.
+ */
+function product_archive_title($title) {
+	if(is_post_type_archive('products')) {
+		$title = 'Shop Stuff';
+	}
+	return $title;
+}
+add_filter('get_the_archive_title', 'product_archive_title');

@@ -9,25 +9,23 @@
  */
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div class="about_hero_banner">
+    <!--<img class='about-banner' src='<?php echo CFS()->get( 'about_banner_img' ); ?>'/>-->
+	<h1 class="about-hero-text"> About </h1>
+		
+	</div>
 
-<?php if ( have_posts() ) : ?>
-                <?php /* Start the Loop */ ?>
-                <?php while ( have_posts() ) : the_post(); ?>
-				
-                    <?php get_template_part( 'template-parts/content-page' ); ?>
-
-                <?php endwhile; ?>
-
-                <?php the_posts_navigation(); ?>
-
-            <?php else : ?>
-
-                <?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-            <?php endif; ?>
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	<div class="ourstory">
+	<h2 >Our Story</h2>
+		<p>
+			<?php echo CFS()->get( 'about_our_story' ); ?>
+		</p>
+	</div>
+	<div class="ourteam">
+	<h2> Our Team </h2>
+		<p>
+			<?php echo CFS()->get( 'about_our_team' ); ?>
+		</p>
+	</div>
 
 <?php get_footer(); ?>

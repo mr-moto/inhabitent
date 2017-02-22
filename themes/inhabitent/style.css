@@ -777,7 +777,12 @@ a {
 .logo {
   width: 50px; }
 
-.page-id-22 .entry-header {
+.page-id-22 #primary {
+  width: 100%;
+  padding: 0;
+  border-right: none; }
+
+.page-id-22 .about_hero_banner {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -794,10 +799,10 @@ a {
   font-size: 3rem;
   text-transform: uppercase; }
 
-.page-id-22 .entry-content {
+.page-id-22 .about_text {
   max-width: 800px;
   margin: 3rem auto 4rem; }
-  .page-id-22 .entry-content h2 {
+  .page-id-22 .about_text h2 {
     font-size: 2.5rem;
     text-align: center; }
 
