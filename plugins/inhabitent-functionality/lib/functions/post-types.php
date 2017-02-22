@@ -10,7 +10,7 @@
 function inhabitent_cpt_product() {
 
 	$labels = array(
-		'name'                  => 'Shop Stuff',
+		'name'                  => 'Products',
 		'singular_name'         => 'Product',
 		'menu_name'             => 'Products',
 		'name_admin_bar'        => 'Products',
