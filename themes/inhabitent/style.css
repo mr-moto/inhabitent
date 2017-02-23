@@ -762,13 +762,40 @@ a {
 .home .site-content {
   padding-top: 0; }
 
-.home .product-categories {
-  display: -ms-flexbox;
-  display: flex; }
+.home .products-container {
+  width: 1120px;
+  margin: 0 auto 3rem; }
+  .home .products-container .product-categories {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    text-align: center; }
+    .home .products-container .product-categories .prod-category-wrapper {
+      -ms-flex-preferred-size: 23%;
+          flex-basis: 23%;
+      border: 1px solid black;
+      margin: 0 2rem; }
+      .home .products-container .product-categories .prod-category-wrapper img {
+        width: 75px; }
 
-.home .journal-container {
-  display: -ms-flexbox;
-  display: flex; }
+.journal-container {
+  width: 1120px;
+  margin: 0 auto; }
+  .journal-container .journal {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin-bottom: 3rem; }
+    .journal-container .journal .journal-post {
+      -ms-flex-preferred-size: 32%;
+          flex-basis: 32%;
+      border: 1px solid black; }
+    .journal-container .journal .journal-img {
+      height: 250px; }
+    .journal-container .journal img {
+      height: 100%; }
 
 #masthead {
   padding: 0.5rem 0;

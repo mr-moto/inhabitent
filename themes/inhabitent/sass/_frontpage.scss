@@ -8,10 +8,42 @@
 	.site-content{
 		padding-top: 0;
 	}
-	.product-categories{
-		display: flex;
+	.products-container{
+		width: 1120px;
+		margin: 0 auto 3rem;
+		.product-categories{
+			display: flex;
+			justify-content: space-between;
+			text-align: center;
+			.prod-category-wrapper{
+				flex-basis: 23%;
+				border: 1px solid black;
+				margin: 0 2rem;
+				img{
+					width: 75px;
+				}
+			}
+		}
 	}
+}
+
+
 	.journal-container{
+		width: 1120px;
+		margin: 0 auto;
+	.journal{
 		display: flex;
+		justify-content: space-between;
+		margin-bottom: 3rem;
+		.journal-post{
+			flex-basis: 32%;
+			border: 1px solid black;
+		}
+		.journal-img{
+			height: 250px;
+		}
+		img{
+			height: 100%;
+		}
 	}
 }

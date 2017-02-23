@@ -52,6 +52,19 @@ function product_archive_title($title) {
 add_filter('get_the_archive_title', 'product_archive_title');
 
 
+/**
+ * Changing adventure archive title.
+ */
+function adventure_archive_title($title) {
+	if(is_post_type_archive('adventures')) {
+		$title = 'Latest Adventures';
+	}
+	return $title;
+}
+add_filter('get_the_archive_title', 'adventure_archive_title');
+
+
+
 
 function inhabitent_about_css() {
 	if(!is_page_template('about.php')){

@@ -24,7 +24,6 @@ get_header(); ?>
                                             'order' => 'ASC',
 											'hide_empty' => false,
                                         ));
-										print_r($terms);
                         foreach ($terms as $term) :
                             $url = get_term_link ($term->slug , 'product-type');              
                     	?>    
