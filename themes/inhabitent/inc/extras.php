@@ -50,3 +50,35 @@ function product_archive_title($title) {
 	return $title;
 }
 add_filter('get_the_archive_title', 'product_archive_title');
+
+
+
+function inhabitent_about_css() {
+	if(!is_page_template('about.php')){
+		return;
+    }
+		$url = CFS()->get ( 'about_banner_img'); 
+
+		if(!$url){
+			return;
+		}
+
+        $about_img_css = "
+        .page-template-about .entry-header{ 
+            background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url($url) no-repeat center bottom;
+			background-size: cover, cover;
+			height: 100vh;
+        }";
+        wp_add_inline_style( 'red-starter-style', $about_img_css );
+    }
+    add_action( 'wp_enqueue_scripts', 'inhabitent_about_css' );
+
+
+	function hwl_home_pagesize( $query ) {
+    if ( is_post_type_archive( 'products' ) ) {
+        $query->set( 'posts_per_page', 16 );
+		$query->set( 'order', 'ASC' );
+        return;
+    }
+}
+add_action( 'pre_get_posts', 'hwl_home_pagesize', 1 );

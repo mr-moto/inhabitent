@@ -754,10 +754,13 @@ a {
   margin-left: 0;
   padding-left: 0; }
 
-.home-hero {
+.home .home-hero {
   background: url(../../images/logos/inhabitent-logo-full.svg) no-repeat center center, linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../../images/home-hero.jpg) no-repeat center bottom;
   background-size: auto, cover, cover;
   height: 100vh; }
+
+.home .site-content {
+  padding-top: 0; }
 
 #masthead {
   padding: 0.5rem 0;
@@ -782,16 +785,16 @@ a {
   padding: 0;
   border-right: none; }
 
-.page-id-22 .about_hero_banner {
+.page-id-22 .site-content {
+  padding-top: 0; }
+
+.page-id-22 .entry-header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
-      justify-content: center;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../../images/about-hero.jpg) no-repeat center bottom;
-  background-size: cover, cover;
-  height: 100vh; }
+      justify-content: center; }
 
 .page-id-22 h1 {
   color: #fff;
@@ -799,12 +802,86 @@ a {
   font-size: 3rem;
   text-transform: uppercase; }
 
-.page-id-22 .about_text {
+.page-id-22 .about-text {
   max-width: 800px;
   margin: 3rem auto 4rem; }
-  .page-id-22 .about_text h2 {
-    font-size: 2.5rem;
+  .page-id-22 .about-text h2 {
     text-align: center; }
+
+.post-type-archive-products #primary {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 0;
+  border: none; }
+
+.post-type-archive-products .page-header {
+  text-align: center;
+  font-family: NovecentoSans;
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 3rem; }
+  .post-type-archive-products .page-header .page-title {
+    font-size: 2.5rem; }
+  .post-type-archive-products .page-header .prod-list {
+    list-style-type: none;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-left: 0;
+    font-size: 1.3rem; }
+    .post-type-archive-products .page-header .prod-list li {
+      margin: 0 1.5rem;
+      text-transform: uppercase; }
+
+.product-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .product-container .single-product {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+    max-width: 23%;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e1e1e1; }
+  .product-container .img-wrapper {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    background-color: #e1e1e1; }
+    .product-container .img-wrapper img {
+      height: 250px;
+      position: absolute;
+      max-width: none;
+      top: 48%;
+      width: auto;
+      left: 50%;
+      transform: translate(-50%, -52%); }
+
+.product-text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: 'Merriweather Web';
+  padding: .75rem 1rem; }
+  .product-text h2 {
+    display: inline;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 0;
+    font-family: 'Merriweather Web';
+    text-transform: none; }
+  .product-text p {
+    display: inline;
+    font-size: 0.9rem;
+    margin: 0; }
 
 #colophon {
   background: url(../../images/dark-wood.png); }

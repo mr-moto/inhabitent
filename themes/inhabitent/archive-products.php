@@ -17,7 +17,7 @@ get_header(); ?>
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 				?>
 			
-                <ul class="shop-stuff">
+                <ul class="prod-list">
                     <?php    
                         $terms = get_terms( array(
                                             'taxonomy' => 'product-type',
@@ -28,7 +28,7 @@ get_header(); ?>
                             $url = get_term_link ($term->slug , 'product-type');              
                     	?>    
 						<li class="shop-stuff-item">                   
-                        <a href='<?php echo $url?>' class='button'><h2><?php echo $term->name; ?></h2></a>
+                        <a href='<?php $url?>' class='button'><?php echo $term->name; ?></a>
 						</li>
                     <?php
                         endforeach;
@@ -38,13 +38,25 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
+			<div class="product-container">
 			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
-
+				
+					<div class="single-product">
+						<div class="img-wrapper">
+							<a href="<?php the_permalink(); ?>" rel="product"> 
+							<?php if ( has_post_thumbnail() ) : ?>
+								<?php the_post_thumbnail(); ?>
+							</a>
+						</div>
+						<?php endif; ?>
+						<div class="product-text">
+							<?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
+							<p><?php echo CFS()->get( 'product-price' ); ?></p>
+						</div>
+					</div>
+				
 			<?php endwhile; ?>
+			</div>
 
 			<?php the_posts_navigation(); ?>
 

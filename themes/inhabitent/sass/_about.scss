@@ -4,13 +4,13 @@
     padding: 0;
     border-right: none;
     }
-    .about_hero_banner{
+    .site-content{
+        padding-top: 0;
+    }
+    .entry-header{
         display: flex;
         align-items: center;
         justify-content: center;
-        background:  linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url(../../images/about-hero.jpg) no-repeat center bottom;
-        background-size: cover, cover;
-        height: 100vh;
     }
     h1{
         color: #fff;
@@ -18,11 +18,10 @@
         font-size: 3rem;
         text-transform: uppercase;
     }
-    .about_text{
+    .about-text{
         max-width: 800px;
         margin: 3rem auto 4rem;
         h2{
-            font-size: 2.5rem;
             text-align: center;
         }
     }

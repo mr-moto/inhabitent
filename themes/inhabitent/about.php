@@ -8,13 +8,14 @@
  * @package RED_Starter_Theme
  */
 get_header(); ?>
+	<header class="entry-header">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	</header><!-- .entry-header -->
 
-	<div class="about_hero_banner">
-    <!--<img class='about-banner' src='<?php echo CFS()->get( 'about_banner_img' ); ?>'/>-->
-	<h1 class="about-hero-text"> About </h1>
 		
 	</div>
 
+<div class='about-text'>
 	<div class="ourstory">
 	<h2 >Our Story</h2>
 		<p>
@@ -27,5 +28,6 @@ get_header(); ?>
 			<?php echo CFS()->get( 'about_our_team' ); ?>
 		</p>
 	</div>
+</div>
 
 <?php get_footer(); ?>

@@ -1,0 +1,79 @@
+.post-type-archive-products{
+    #primary{
+        width: 1120px;
+        margin: 0 auto;
+        padding: 0;
+        border: none;
+    }
+    .page-header{
+        text-align: center;
+        font-family: NovecentoSans;
+        border-bottom: 1px dashed #c8c8c8;
+        margin-bottom: 3rem;
+        .page-title{
+            font-size: 2.5rem;
+        }
+        .prod-list{
+            list-style-type: none;
+            display: flex;
+            padding-left: 0;
+            justify-content: center;
+            margin-left: 0;
+            font-size: 1.3rem;
+
+            li{
+                margin: 0 1.5rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .single-product{
+        flex-basis: 23%;
+        max-width: 23%;
+        margin-bottom: 1.5rem;
+        border: 1px solid #e1e1e1;
+    }
+    .img-wrapper{
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+        background-color: #e1e1e1;
+        img{
+            height: 250px;
+            position: absolute;
+            max-width: none;
+            top: 48%;
+            width: auto;
+            left: 50%;
+            transform: translate(-50%,-52%);
+        }
+    }
+}
+
+.product-text{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-family: 'Merriweather Web';
+    padding: .75rem 1rem;
+    h2{
+        display: inline;
+        font-size: 1rem;
+        margin: 0;
+        font-weight: 300;
+        letter-spacing: 0;
+        font-family: 'Merriweather Web';
+        text-transform: none;
+    }
+    p{
+        display: inline;
+        font-size: 0.9rem;
+        margin: 0
+    }
+}
