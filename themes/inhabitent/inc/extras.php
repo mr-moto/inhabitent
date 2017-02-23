@@ -77,7 +77,6 @@ function inhabitent_about_css() {
 	function hwl_home_pagesize( $query ) {
     if ( is_post_type_archive( 'products' ) ) {
         $query->set( 'posts_per_page', 16 );
-		$query->set( 'order', 'ASC' );
         return;
     }
 }

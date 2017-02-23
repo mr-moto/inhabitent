@@ -21,9 +21,10 @@ get_header(); ?>
                     <?php    
                         $terms = get_terms( array(
                                             'taxonomy' => 'product-type',
-                                            'orderby' => 'name',
+                                            'order' => 'ASC',
 											'hide_empty' => false,
                                         ));
+										print_r($terms);
                         foreach ($terms as $term) :
                             $url = get_term_link ($term->slug , 'product-type');              
                     	?>    
