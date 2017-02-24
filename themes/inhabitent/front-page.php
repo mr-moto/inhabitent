@@ -81,7 +81,7 @@ get_header(); ?>
         </div>
         <?php endforeach; ?>
         <p>
-            <a href="<?php the_permalink(); ?>">More Adventures</a>
+            <a href="<?php echo get_post_type_archive_link( 'adventures' ); ?>">More Adventures</a>
         </p>
     </div>
 </section>

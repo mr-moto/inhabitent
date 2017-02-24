@@ -27,11 +27,12 @@ get_header(); ?>
 							<a class="adv-link" href="<?php the_permalink(); ?>" rel="product"> 
 							<?php if ( has_post_thumbnail() ) : ?>
 								<?php the_post_thumbnail(); ?>
-							</a>
+						
                             <?php endif; ?>
                             <div class="adventure-text">
                                 <?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
                             </div>
+							</a>
                         </div>
 					</div>
 				
