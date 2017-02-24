@@ -19,21 +19,20 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<div class="product-container">
+			<div class="adventure-container">
 			<?php while ( have_posts() ) : the_post(); ?>
 				
-					<div class="single-product">
+					<div class="post">
 						<div class="img-wrapper">
-							<a href="<?php the_permalink(); ?>" rel="product"> 
+							<a class="adv-link" href="<?php the_permalink(); ?>" rel="product"> 
 							<?php if ( has_post_thumbnail() ) : ?>
 								<?php the_post_thumbnail(); ?>
 							</a>
-						</div>
-						<?php endif; ?>
-						<div class="product-text">
-							<?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
-							<p><?php echo CFS()->get( 'product-price' ); ?></p>
-						</div>
+                            <?php endif; ?>
+                            <div class="adventure-text">
+                                <?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
+                            </div>
+                        </div>
 					</div>
 				
 			<?php endwhile; ?>

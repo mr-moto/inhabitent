@@ -82,9 +82,30 @@ function inhabitent_about_css() {
 			background-size: cover, cover;
 			height: 100vh;
         }";
+        $adv_img_css = "
+        .img-wrapper{
+        background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% )
+        }";
+
         wp_add_inline_style( 'red-starter-style', $about_img_css );
     }
     add_action( 'wp_enqueue_scripts', 'inhabitent_about_css' );
+
+function inhabitent_adventure_css() {
+	if(!is_page_template('archive-adventures.php')){
+		return;
+    }
+        $adv_img_css = "
+        .adv-link img{
+        background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% )
+        }";
+
+        wp_add_inline_style( 'red-starter-style', $adv_img_css );
+    }
+    add_action( 'wp_enqueue_scripts', 'inhabitent_adventure_css' );
+
+
+
 
 
 	function hwl_home_pagesize( $query ) {

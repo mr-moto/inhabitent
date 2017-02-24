@@ -104,7 +104,7 @@ add_action( 'init', 'inhabitent_cpt_product', 0 );
  		'show_ui'               => true,
  		'show_in_menu'          => true,
  		'menu_position'         => 5,
- 		'menu_icon'             => 'dashicons-store',
+ 		'menu_icon'             => 'dashicons-palmtree',
 		'show_in_admin_bar'     => true,
  		'show_in_nav_menus'     => true,
 		'can_export'            => true,

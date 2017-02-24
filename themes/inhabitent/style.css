@@ -797,6 +797,50 @@ a {
     .journal-container .journal img {
       height: 100%; }
 
+.adventures-container {
+  width: 1120px;
+  margin: 0 auto 4rem; }
+  .adventures-container img {
+    position: absolute;
+    max-width: none;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .adventures-container .adventure-post {
+    position: relative;
+    float: left;
+    overflow: hidden; }
+  .adventures-container .adventure-post:first-child {
+    height: 540px;
+    width: 540px;
+    margin-right: 20px; }
+  .adventures-container .adventure-post:nth-child(2) {
+    height: 250px;
+    width: 560px;
+    margin-bottom: 20px; }
+    .adventures-container .adventure-post:nth-child(2) img {
+      width: 100%;
+      height: auto; }
+  .adventures-container .adventure-post:nth-child(3) {
+    height: 270px;
+    width: 270px;
+    margin-right: 20px; }
+  .adventures-container .adventure-post:nth-child(4) {
+    height: 270px;
+    width: 270px; }
+  .adventures-container .adventure-text-wrapper {
+    position: absolute;
+    top: 0; }
+  .adventures-container .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0; }
+
 #masthead {
   padding: 0.5rem 0;
   background-color: rgba(255, 255, 255, 0.85);
@@ -854,49 +898,55 @@ a {
   font-family: NovecentoSans;
   border-bottom: 1px dashed #c8c8c8;
   margin-bottom: 3rem; }
-  .post-type-archive-products .page-header .page-title {
-    font-size: 2.5rem; }
-  .post-type-archive-products .page-header .prod-list {
-    list-style-type: none;
-    display: -ms-flexbox;
-    display: flex;
-    padding-left: 0;
-    -ms-flex-pack: center;
-        justify-content: center;
-    margin-left: 0;
-    font-size: 1.3rem; }
-    .post-type-archive-products .page-header .prod-list li {
-      margin: 0 1.5rem;
-      text-transform: uppercase; }
 
-.product-container {
+.post-type-archive-products .page-title {
+  font-size: 2.5rem; }
+
+.post-type-archive-products .prod-list {
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-left: 0;
+  font-size: 1.3rem; }
+
+.post-type-archive-products li {
+  margin: 0 1.5rem;
+  text-transform: uppercase; }
+
+.post-type-archive-products .product-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: justify;
       justify-content: space-between; }
-  .product-container .single-product {
-    -ms-flex-preferred-size: 23%;
-        flex-basis: 23%;
-    max-width: 23%;
-    margin-bottom: 1.5rem;
-    border: 1px solid #e1e1e1; }
-  .product-container .img-wrapper {
-    height: 250px;
-    position: relative;
-    overflow: hidden;
-    background-color: #e1e1e1; }
-    .product-container .img-wrapper img {
-      height: 250px;
-      position: absolute;
-      max-width: none;
-      top: 48%;
-      width: auto;
-      left: 50%;
-      transform: translate(-50%, -52%); }
 
-.product-text {
+.post-type-archive-products .single-product {
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  max-width: 23%;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e1e1e1; }
+
+.post-type-archive-products .img-wrapper {
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  background-color: #e1e1e1; }
+
+.post-type-archive-products img {
+  height: 250px;
+  position: absolute;
+  max-width: none;
+  top: 48%;
+  width: auto;
+  left: 50%;
+  transform: translate(-50%, -52%); }
+
+.post-type-archive-products .product-text {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -905,18 +955,64 @@ a {
       align-content: center;
   font-family: 'Merriweather Web';
   padding: .75rem 1rem; }
-  .product-text h2 {
-    display: inline;
-    font-size: 1rem;
-    margin: 0;
-    font-weight: 300;
-    letter-spacing: 0;
-    font-family: 'Merriweather Web';
-    text-transform: none; }
-  .product-text p {
-    display: inline;
-    font-size: 0.9rem;
-    margin: 0; }
+
+.post-type-archive-products h2 {
+  display: inline;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0;
+  font-family: 'Merriweather Web';
+  text-transform: none; }
+
+.post-type-archive-products p {
+  display: inline;
+  font-size: 0.9rem;
+  margin: 0; }
+
+.post-type-archive-adventures #primary {
+  width: 1120px;
+  padding: 0;
+  border: none;
+  margin: 0 auto; }
+
+.post-type-archive-adventures .adventure-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.post-type-archive-adventures .post {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem; }
+
+.post-type-archive-adventures .img-wrapper {
+  position: relative; }
+
+.post-type-archive-adventures .adv-link img {
+  height: 550px;
+  width: auto;
+  max-width: none;
+  position: absolute;
+  transform: translate(-50%, 0%);
+  left: 50%; }
+
+.post-type-archive-adventures .adventure-text {
+  position: absolute;
+  color: #fff;
+  margin: 4.5rem 1rem; }
+
+.post-type-archive-adventures .entry-title {
+  font-size: 3rem;
+  font-family: 'Merriweather Web',sans-serif;
+  font-weight: 300;
+  text-transform: none; }
 
 #colophon {
   background: url(../../images/dark-wood.png); }

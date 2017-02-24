@@ -16,7 +16,6 @@ get_header(); ?>
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 				?>
-			
                 <ul class="prod-list">
                     <?php    
                         $terms = get_terms( array(

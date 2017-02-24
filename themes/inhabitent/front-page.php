@@ -59,29 +59,30 @@ get_header(); ?>
 </section>
 <section class="adventures-container">
 <h2 class="adventure-title">Latest Adventures</h2>
-    <div class="journal">
+    <div class="adventure clearfix">
         <?php
         $posts = get_posts( array( 
             'post_type' => 'adventures', 
-            'order' => 'DSC', 
-            'posts_per_page' => 3
+            'order' => 'ASC', 
         ));
         foreach ( $posts as $post ) :
         ?>
 
-        <div class="journal-post">
-            <div class="journal-img">
+        <div class="adventure-post">
+            <div class="adventure-wrapper">
             <?php 
                 the_post_thumbnail(); 
             ?>
             </div>
-            <div class="journal-text-wrapper">
-                <p><?php echo get_the_date(); ?> / <?php comments_number(); ?> </p>
+            <div class="adventure-text-wrapper">
                 <a href=" <?php the_permalink(); ?> "> <h3> <?php the_title(); ?> </h3> </a>
                 <a class="read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"> Read Entry </a>
             </div>
         </div>
         <?php endforeach; ?>
+        <p>
+            <a href="<?php the_permalink(); ?>">More Adventures</a>
+        </p>
     </div>
 </section>
 
