@@ -1,6 +1,7 @@
 body{
     font-size: 16px;
     font-family: 'Merriweather Web';
+    line-height: 1.75;
 }
 h1{
     font-family:'NovecentoSans';
@@ -13,6 +14,9 @@ h2{
     font-size: 2rem;
         letter-spacing: 2px;
         text-transform: uppercase;
+}
+h3{
+    font-size: 1.8rem;
 }
 a {
     color: #248a83;

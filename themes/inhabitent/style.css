@@ -389,17 +389,15 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
+  border: none;
+  border-radius: 0px;
+  background: #248a83;
+  color: #fff;
+  font-family: 'NovecentoSans';
+  text-transform: uppercase;
+  font-size: 0.9rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: .75rem 1.5rem; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -424,6 +422,7 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #666;
+  background-color: #f4f4f4;
   border: 1px solid #ccc;
   border-radius: 3px; }
   input[type="text"]:focus,
@@ -451,8 +450,6 @@ textarea {
 /* Links */
 a {
   color: royalblue; }
-  a:visited {
-    color: purple; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -697,7 +694,8 @@ object {
 /* Front page */
 body {
   font-size: 16px;
-  font-family: 'Merriweather Web'; }
+  font-family: 'Merriweather Web';
+  line-height: 1.75; }
 
 h1 {
   font-family: 'NovecentoSans';
@@ -710,6 +708,9 @@ h2 {
   font-size: 2rem;
   letter-spacing: 2px;
   text-transform: uppercase; }
+
+h3 {
+  font-size: 1.8rem; }
 
 a {
   color: #248a83;
@@ -875,6 +876,8 @@ a {
     border: none;
     padding: 0;
     display: none; }
+  .search-nav .search-button {
+    color: #248a83; }
 
 .page-id-22 #primary {
   width: 100%;
@@ -1050,6 +1053,61 @@ a {
 .single-adventures h2 {
   text-align: center; }
 
+.single-post .blog-wrapper {
+  display: -ms-flexbox;
+  display: flex; }
+
+.single-post .entry-header {
+  position: relative;
+  line-height: 0;
+  color: #fff; }
+  .single-post .entry-header h1 {
+    line-height: 1.25;
+    font-size: 2.1rem;
+    text-transform: uppercase; }
+
+.single-post .entry-title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #248a83;
+  padding: 1rem 1.5rem;
+  width: 74%;
+  margin-top: 2.25rem; }
+  .single-post .entry-title a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase; }
+
+.single-post .entry-meta {
+  position: absolute;
+  background-color: #248a83;
+  padding: 1rem;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  font-family: 'NovecentoSans'; }
+
+.single-post .comments-link a {
+  color: #fff; }
+
+.single-post .entry-footer {
+  font-family: 'NovecentoSans';
+  text-transform: uppercase; }
+  .single-post .entry-footer .cat-links {
+    margin-right: 1.5rem; }
+  .single-post .entry-footer a {
+    color: #248a83; }
+
+.single-post .social {
+  margin-bottom: 5rem; }
+  .single-post .social a {
+    padding: 0.5rem 1.3rem;
+    border: 1px solid black;
+    color: black; }
+  .single-post .social .fa {
+    margin-right: 0.5rem; }
+
 #colophon {
   background: url(../../images/dark-wood.png); }
   #colophon .footer-content div {
@@ -1073,9 +1131,7 @@ a {
   width: 74%;
   margin-top: 2.25rem; }
   .blog .entry-title a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase; }
+    color: #fff; }
 
 .blog .entry-meta {
   position: absolute;

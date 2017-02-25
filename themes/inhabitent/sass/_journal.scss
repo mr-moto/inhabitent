@@ -1,5 +1,4 @@
-.blog {
-
+.blog{
     .blog-wrapper{
         display: flex;
     }
@@ -16,11 +15,9 @@
         padding: 1rem 1.5rem;
         width: 74%;
         margin-top: 2.25rem;
-            a{
-                text-decoration: none;
-                color: #fff;
-                text-transform: uppercase;
-            }
+        a{
+            color: #fff;
+        }
     }
     .entry-meta{
         position: absolute;
