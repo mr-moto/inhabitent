@@ -879,6 +879,19 @@ a {
   .search-nav .search-button {
     color: #248a83; }
 
+.contact {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem; }
+  .contact i {
+    width: 30px; }
+
+.day-of-week {
+  font-weight: bold; }
+
+.widget_text {
+  margin-bottom: 2rem; }
+
 .page-id-22 #primary {
   width: 100%;
   padding: 0;
