@@ -58,7 +58,7 @@ get_header(); ?>
     </div>
 </section>
 <section class="adventures-container">
-<h2 class="adventure-title">Latest Adventures</h2>
+    <h2 class="adventure-title">Latest Adventures</h2>
     <div class="adventure clearfix">
         <?php
         $posts = get_posts( array( 

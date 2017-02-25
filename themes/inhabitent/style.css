@@ -715,6 +715,10 @@ a {
   color: #248a83;
   text-decoration: none; }
 
+#site-navigation {
+  display: -ms-flexbox;
+  display: flex; }
+
 .container {
   width: 1120px;
   display: -ms-flexbox;
@@ -858,6 +862,19 @@ a {
 
 .logo {
   width: 50px; }
+
+.search-nav {
+  line-height: 1.4;
+  padding-left: 1.5rem; }
+  .search-nav fieldset {
+    border: none;
+    padding: 0; }
+  .search-nav .search-button {
+    display: inline; }
+  .search-nav .search-field {
+    border: none;
+    padding: 0;
+    display: none; }
 
 .page-id-22 #primary {
   width: 100%;

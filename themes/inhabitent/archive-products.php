@@ -27,7 +27,7 @@ get_header(); ?>
                             $url = get_term_link ($term->slug , 'product-type');              
                     	?>    
 						<li class="shop-stuff-item">                   
-                        <a href='<?php $url?>' class='button'><?php echo $term->name; ?></a>
+                        <a href='<?php echo $url ?>' class='button'><?php echo $term->name; ?></a>
 						</li>
                     <?php
                         endforeach;

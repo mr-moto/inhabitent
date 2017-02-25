@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-
+<div class="sidebar-container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -30,4 +30,5 @@ endif;
 		</main><!-- #mainnnnm -->
 	</div><!-- #primary -->
 <?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>

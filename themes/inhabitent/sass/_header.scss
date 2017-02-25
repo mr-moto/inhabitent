@@ -18,3 +18,19 @@
 .logo{
     width: 50px;
 }
+.search-nav{
+    line-height: 1.4;
+    padding-left: 1.5rem;
+    fieldset{
+        border: none;
+        padding: 0;
+    }
+    .search-button{
+        display: inline;
+    }
+    .search-field{
+        border: none;
+        padding: 0;
+        display: none;
+    }
+}
