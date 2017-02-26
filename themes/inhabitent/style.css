@@ -724,11 +724,7 @@ a {
   width: 1120px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  margin: 0 auto;
-  -ms-flex-align: center;
-      align-items: center; }
+  margin: 0 auto; }
 
 .sidebar-container {
   width: 1120px;
@@ -890,7 +886,7 @@ a {
   font-weight: bold; }
 
 .widget_text {
-  margin-bottom: 2rem; }
+  margin-bottom: 3rem; }
 
 .page-id-22 #primary {
   width: 100%;
@@ -1123,8 +1119,42 @@ a {
 
 #colophon {
   background: url(../../images/dark-wood.png); }
-  #colophon .footer-content div {
-    margin: 3rem 0; }
+  #colophon .footer-text-container {
+    margin: 2.5rem 0;
+    line-height: 1.5;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
+  #colophon h3 {
+    color: #d99054;
+    font-size: 1.2rem;
+    margin-bottom: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'NovecentoSans'; }
+  #colophon .contact-text {
+    color: #fff; }
+    #colophon .contact-text div {
+      margin-bottom: 1.5rem; }
+    #colophon .contact-text .fa {
+      font-size: 1.2rem;
+      width: 25px; }
+    #colophon .contact-text a {
+      color: #fff; }
+  #colophon .site-info {
+    font-family: Novecento Sans Web,sans-serif;
+    padding: 1.5rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff; }
+  #colophon .bold {
+    font-weight: bold; }
+  #colophon .footer-logo {
+    margin-top: 4rem;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    text-align: right; }
+    #colophon .footer-logo img {
+      width: 50%; }
 
 .blog .blog-wrapper {
   display: -ms-flexbox;
