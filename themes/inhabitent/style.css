@@ -733,7 +733,7 @@ a {
   margin: 0 auto; }
 
 .site-content {
-  padding-top: 55px; }
+  padding-top: 50px; }
 
 #primary {
   width: 73%;
@@ -842,38 +842,66 @@ a {
     clear: both;
     height: 0; }
 
-#masthead {
+.site-header {
   padding: 0.5rem 0;
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;
-  position: absolute;
-  width: 100%; }
-
-#primary-menu {
-  text-transform: uppercase; }
-  #primary-menu a {
+  position: fixed;
+  width: 100%;
+  z-index: 1; }
+  .site-header a {
     color: #248a83;
     font-family: "NovecentoSans"; }
-  #primary-menu li {
+  .site-header h1 {
+    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: 50px 33px;
+    height: 33px;
+    width: 50px;
+    margin: 0; }
+
+.site-header-reverse {
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: transparent;
+  border-bottom: 0;
+  position: absolute;
+  border-bottom: none; }
+  .site-header-reverse a {
+    color: #fff;
+    font-family: "NovecentoSans"; }
+  .site-header-reverse h1 {
+    background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+    background-size: 50px 33px;
+    height: 33px;
+    width: 50px;
+    margin: 0; }
+
+#masthead .container {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+
+#masthead #primary-menu {
+  text-transform: uppercase; }
+  #masthead #primary-menu li {
     padding-left: 1.5rem; }
 
-.logo {
+#masthead .logo {
   width: 50px; }
 
-.search-nav {
+#masthead .search-nav {
   line-height: 1.4;
   padding-left: 1.5rem; }
-  .search-nav fieldset {
+  #masthead .search-nav fieldset {
     border: none;
     padding: 0; }
-  .search-nav .search-button {
+  #masthead .search-nav .search-button {
     display: inline; }
-  .search-nav .search-field {
+  #masthead .search-nav .search-field {
     border: none;
     padding: 0;
     display: none; }
-  .search-nav .search-button {
-    color: #248a83; }
 
 .contact {
   display: -ms-flexbox;

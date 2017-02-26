@@ -24,8 +24,7 @@
 				<div class="container">
 					<div class="site-branding">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-								<h1 class="site-title screen-reader-text"><?php bloginfo( 'name' ); ?></h1>
-								<img class="logo" src=" <?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg" alt="logo">
+								<h1 class="site-title"></h1>
 						</a>
 					</div><!-- .site-branding -->
 

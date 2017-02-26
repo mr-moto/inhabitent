@@ -1,39 +1,69 @@
-#masthead{
+.site-header{
     padding: 0.5rem 0;
     background-color: hsla(0,0%,100%,.85);
     border-bottom: 1px solid #e1e1e1;
-    position: absolute;
+    position: fixed;
     width: 100%;
-}
-#primary-menu{
-    text-transform: uppercase;
+    z-index: 1;
     a{
         color: #248a83;
         font-family: "NovecentoSans"
     }
-    li{
+    h1{
+        background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+        background-size: 50px 33px;
+        height: 33px;
+        width: 50px;
+        margin: 0;
+    }
+}
+.site-header-reverse{
+    width: 100%;
+    padding: 0.5rem 0;
+    background-color: transparent;
+    border-bottom: 0;
+    position: absolute;
+    border-bottom: none;
+    a{
+        color: #fff;
+        font-family: "NovecentoSans"
+    }
+    h1{
+        background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+        background-size: 50px 33px;
+        height: 33px;
+        width: 50px;
+        margin: 0;
+    }
+}
+#masthead{
+    .container{
+        justify-content: space-between;
+        align-items: center;
+    }
+    #primary-menu{
+        text-transform: uppercase;
+        li{
+            padding-left: 1.5rem;
+        }
+    }
+    .logo{
+        width: 50px;
+    }
+    .search-nav{
+        line-height: 1.4;
         padding-left: 1.5rem;
-    }
-}
-.logo{
-    width: 50px;
-}
-.search-nav{
-    line-height: 1.4;
-    padding-left: 1.5rem;
-    fieldset{
-        border: none;
-        padding: 0;
-    }
-    .search-button{
-        display: inline;
-    }
-    .search-field{
-        border: none;
-        padding: 0;
-        display: none;
-    }
-    .search-button{
-        color: #248a83;
+        fieldset{
+            border: none;
+            padding: 0;
+        }
+        .search-button{
+            display: inline;
+        }
+        .search-field{
+            border: none;
+            padding: 0;
+            display: none;
+        }
     }
 }
