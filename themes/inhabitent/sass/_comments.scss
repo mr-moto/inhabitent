@@ -1,0 +1,38 @@
+#comments{
+    .comment-list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .comment-list>li{
+            border-bottom: 1px solid #e1e1e1;
+        }
+    .children{
+        list-style: none;
+        margin-bottom: 0;
+        margin-left: 1.5rem;
+        li{
+            border-top: 1px solid #e1e1e1
+        }
+    }
+    .comment{
+        padding-top: 1.5rem
+    }
+    .comment article {
+        padding-bottom: 1.5rem;
+    }
+    .comment-author-avatar {
+        border-radius: 50%;
+        height: 64px;
+        margin-right: 1.5rem;
+        overflow: hidden;
+        width: 64px;
+    }
+    .comment-body{
+        display: flex;
+    }
+    cite {
+    font-style: normal;
+    font-weight: bold;
+}
+}

@@ -108,11 +108,20 @@ function inhabitent_adventure_css() {
 
 
 
-	function hwl_home_pagesize( $query ) {
-    if ( is_post_type_archive( 'products' ) || is_tax('product-type') ) {
+	function product_order( $query ) {
+    if ( is_post_type_archive( 'products' ) || is_tax('product-type')) {
         $query->set( 'posts_per_page', 16 );
+        $query->set('orderby', 'name' );
         $query->set('order', 'ASC' );
         return;
     }
 }
-add_action( 'pre_get_posts', 'hwl_home_pagesize', 1 );
+add_action( 'pre_get_posts', 'product_order');
+
+function adventures_order( $query ) {
+    if ( is_post_type_archive( 'adventures' )) {
+        $query->set('order', 'ASC' );
+        return;
+    }
+}
+add_action( 'pre_get_posts', 'adventures_order');

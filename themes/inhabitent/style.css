@@ -402,8 +402,7 @@ input[type="submit"] {
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+    border-color: #ccc #bbb #aaa; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -921,6 +920,42 @@ a {
     content: " ";
     clear: both;
     height: 0; }
+
+#comments .comment-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#comments .comment-list > li {
+  border-bottom: 1px solid #e1e1e1; }
+
+#comments .children {
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 1.5rem; }
+  #comments .children li {
+    border-top: 1px solid #e1e1e1; }
+
+#comments .comment {
+  padding-top: 1.5rem; }
+
+#comments .comment article {
+  padding-bottom: 1.5rem; }
+
+#comments .comment-author-avatar {
+  border-radius: 50%;
+  height: 64px;
+  margin-right: 1.5rem;
+  overflow: hidden;
+  width: 64px; }
+
+#comments .comment-body {
+  display: -ms-flexbox;
+  display: flex; }
+
+#comments cite {
+  font-style: normal;
+  font-weight: bold; }
 
 .post-type-archive-products .site-content #primary,
 .tax-product-type .site-content #primary {
