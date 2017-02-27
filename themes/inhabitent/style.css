@@ -1080,6 +1080,9 @@ a {
   display: -ms-flexbox;
   display: flex; }
 
+.blog .hentry {
+  margin-bottom: 4.5rem; }
+
 .blog .entry-header {
   position: relative;
   line-height: 0;
@@ -1102,6 +1105,19 @@ a {
   padding: 1rem;
   bottom: 0;
   right: 0; }
+
+.blog .read-more {
+  padding: .75rem 1.5rem;
+  border: 1px solid black;
+  color: black;
+  font-size: 0.9rem;
+  font-family: 'NovecentoSans', sans-serif;
+  text-transform: uppercase; }
+
+.blog .read-more:hover {
+  background-color: #248a83;
+  border: 1px solid #248a83;
+  color: #fff; }
 
 .single-post .blog-wrapper {
   display: -ms-flexbox;
