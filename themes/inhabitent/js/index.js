@@ -8,9 +8,9 @@
         $('.search-field').focus();
     });
 
-    // $('.search-field').focusout(function() {
-    //     $('.search-field').animate({width: 'toggle'});
-    // });
+    $('.search-field').focusout(function() {
+        $('.search-field').animate({width: 'toggle'});
+    });
 
 
 // scroll toggle

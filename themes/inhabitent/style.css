@@ -821,6 +821,7 @@ a {
   #masthead .search-nav .search-button {
     display: inline; }
   #masthead .search-nav .search-field {
+    color: #fff;
     border: none;
     padding: 0;
     display: none;
