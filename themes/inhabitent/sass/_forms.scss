@@ -40,12 +40,17 @@ input[type="password"],
 input[type="search"],
 textarea {
 	color: #666;
-	background-color: #f4f4f4;
+	background-color: transparent;
 	border: 1px solid #ccc;
 	border-radius: 3px;
+	text-transform: uppercase;
+	margin-left: .75rem;
+	width: 190px;
 
 	&:focus {
-		color: #111;
+		color: #fff;
+		outline: none;
+		
 	}
 }
 

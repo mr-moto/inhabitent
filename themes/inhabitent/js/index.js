@@ -25,8 +25,9 @@
                 } else {
                     $('#masthead').removeClass('site-header').addClass('site-header-reverse');
                 } 
-        })
-        
-    }
+            })
+        } else {
+            $('#masthead').addClass('site-header');
+        }
 
 })(jQuery);

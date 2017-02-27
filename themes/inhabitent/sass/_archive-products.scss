@@ -1,9 +1,13 @@
-.post-type-archive-products{
+.post-type-archive-products .site-content{
     #primary{
         width: 1120px;
         margin: 0 auto;
         padding: 0;
         border: none;
+    }
+    .site-main{
+        padding-top: 1rem;
+        padding-bottom: 4rem;
     }
     .page-header{
         text-align: center;
@@ -12,7 +16,8 @@
         margin-bottom: 3rem;
     }
     .page-title{
-        font-size: 2.5rem;
+        font-size: 2.4rem;
+        text-transform: uppercase;
     }
     .prod-list{
         list-style-type: none;
@@ -20,7 +25,8 @@
         padding-left: 0;
         justify-content: center;
         margin-left: 0;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
     }
     li{
         margin: 0 1.5rem;
@@ -38,12 +44,12 @@
         border: 1px solid #e1e1e1;
     }
     .img-wrapper{
-        height: 250px;
+        height: 245px;
         position: relative;
         overflow: hidden;
         background-color: #e1e1e1;
         img{
-            height: 250px;
+            height: 255px;
             position: absolute;
             max-width: none;
             top: 48%;
@@ -60,17 +66,18 @@
         padding: .75rem 1rem;
     }
     h2{
-        display: inline;
         font-size: 1rem;
         margin: 0;
         font-weight: 300;
         letter-spacing: 0;
         font-family: 'Merriweather Web';
         text-transform: none;
+        overflow: hidden;
+        white-space: nowrap;
+        line-height: 2;
     }
-    p{
-        display: inline;
-        font-size: 0.9rem;
-        margin: 0
-    }
+    h2:after {
+            width: 0;
+            content: '..................................';
+        }
 }

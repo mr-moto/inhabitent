@@ -50,7 +50,8 @@ get_header(); ?>
 						<?php endif; ?>
 						<div class="product-text">
 							<?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
-							<p><?php echo CFS()->get( 'product-price' ); ?></p>
+							<span><?php echo CFS()->get( 'product-price' ); ?></span>
+							
 						</div>
 					</div>
 				

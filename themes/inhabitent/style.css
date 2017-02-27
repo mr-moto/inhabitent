@@ -422,16 +422,20 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #666;
-  background-color: #f4f4f4;
+  background-color: transparent;
   border: 1px solid #ccc;
-  border-radius: 3px; }
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin-left: .75rem;
+  width: 190px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    color: #111; }
+    color: #fff;
+    outline: none; }
 
 input[type="text"],
 input[type="email"],
@@ -944,22 +948,27 @@ a {
   .page-id-22 .about-text h2 {
     text-align: center; }
 
-.post-type-archive-products #primary {
+.post-type-archive-products .site-content #primary {
   width: 1120px;
   margin: 0 auto;
   padding: 0;
   border: none; }
 
-.post-type-archive-products .page-header {
+.post-type-archive-products .site-content .site-main {
+  padding-top: 1rem;
+  padding-bottom: 4rem; }
+
+.post-type-archive-products .site-content .page-header {
   text-align: center;
   font-family: NovecentoSans;
   border-bottom: 1px dashed #c8c8c8;
   margin-bottom: 3rem; }
 
-.post-type-archive-products .page-title {
-  font-size: 2.5rem; }
+.post-type-archive-products .site-content .page-title {
+  font-size: 2.4rem;
+  text-transform: uppercase; }
 
-.post-type-archive-products .prod-list {
+.post-type-archive-products .site-content .prod-list {
   list-style-type: none;
   display: -ms-flexbox;
   display: flex;
@@ -967,13 +976,14 @@ a {
   -ms-flex-pack: center;
       justify-content: center;
   margin-left: 0;
-  font-size: 1.3rem; }
+  font-size: 1.2rem;
+  margin-bottom: 3rem; }
 
-.post-type-archive-products li {
+.post-type-archive-products .site-content li {
   margin: 0 1.5rem;
   text-transform: uppercase; }
 
-.post-type-archive-products .product-container {
+.post-type-archive-products .site-content .product-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -981,20 +991,20 @@ a {
   -ms-flex-pack: justify;
       justify-content: space-between; }
 
-.post-type-archive-products .single-product {
+.post-type-archive-products .site-content .single-product {
   -ms-flex-preferred-size: 23%;
       flex-basis: 23%;
   max-width: 23%;
   margin-bottom: 1.5rem;
   border: 1px solid #e1e1e1; }
 
-.post-type-archive-products .img-wrapper {
-  height: 250px;
+.post-type-archive-products .site-content .img-wrapper {
+  height: 245px;
   position: relative;
   overflow: hidden;
   background-color: #e1e1e1; }
-  .post-type-archive-products .img-wrapper img {
-    height: 250px;
+  .post-type-archive-products .site-content .img-wrapper img {
+    height: 255px;
     position: absolute;
     max-width: none;
     top: 48%;
@@ -1002,7 +1012,7 @@ a {
     left: 50%;
     transform: translate(-50%, -52%); }
 
-.post-type-archive-products .product-text {
+.post-type-archive-products .site-content .product-text {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -1012,19 +1022,20 @@ a {
   font-family: 'Merriweather Web';
   padding: .75rem 1rem; }
 
-.post-type-archive-products h2 {
-  display: inline;
+.post-type-archive-products .site-content h2 {
   font-size: 1rem;
   margin: 0;
   font-weight: 300;
   letter-spacing: 0;
   font-family: 'Merriweather Web';
-  text-transform: none; }
+  text-transform: none;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 2; }
 
-.post-type-archive-products p {
-  display: inline;
-  font-size: 0.9rem;
-  margin: 0; }
+.post-type-archive-products .site-content h2:after {
+  width: 0;
+  content: '..................................'; }
 
 .post-type-archive-adventures #primary {
   width: 1120px;
