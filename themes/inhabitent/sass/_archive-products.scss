@@ -1,4 +1,5 @@
-.post-type-archive-products .site-content{
+.post-type-archive-products .site-content,
+.tax-product-type .site-content{
     #primary{
         width: 1120px;
         margin: 0 auto;
@@ -11,7 +12,7 @@
     }
     .page-header{
         text-align: center;
-        font-family: NovecentoSans;
+        font-family: 'NovecentoSans';
         border-bottom: 1px dashed #c8c8c8;
         margin-bottom: 3rem;
     }
@@ -80,4 +81,8 @@
             width: 0;
             content: '..................................';
         }
+    .taxonomy-description{
+        font-family: 'Merriweather Web', sans-serif;
+        margin-bottom: 2rem;
+    }
 }

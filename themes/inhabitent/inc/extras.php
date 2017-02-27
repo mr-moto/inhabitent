@@ -109,7 +109,7 @@ function inhabitent_adventure_css() {
 
 
 	function hwl_home_pagesize( $query ) {
-    if ( is_post_type_archive( 'products' ) ) {
+    if ( is_post_type_archive( 'products' ) || is_tax('product-type') ) {
         $query->set( 'posts_per_page', 16 );
         $query->set('order', 'ASC' );
         return;

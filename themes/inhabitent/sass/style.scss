@@ -65,16 +65,20 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "page-templates";
 @import "globals";
 
-
-@import "frontpage";
 @import "header";
 @import "sidebar";
-@import "about";
+@import "frontpage";
+
 @import "archive-products";
-@import "archive-adventures";
 @import "single-product";
-@import "single-adventure";
+
+@import "journal";
 @import "single-journal";
 
+@import "about";
+
+@import "archive-adventures";
+@import "single-adventure";
+
 @import "footer";
-@import "journal";
+
