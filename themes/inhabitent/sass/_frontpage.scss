@@ -11,18 +11,18 @@
 	.products-container{
 		width: 1120px;
 		margin: 0 auto 3rem;
-		.product-categories{
-			display: flex;
-			justify-content: space-between;
-			text-align: center;
-			.prod-category-wrapper{
-				flex-basis: 23%;
-				border: 1px solid black;
-				margin: 0 2rem;
-				img{
-					width: 75px;
-				}
-			}
+	}
+	.product-categories{
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+	}
+	.prod-category-wrapper{
+		flex-basis: 23%;
+		border: 1px solid black;
+		margin: 0 2rem;
+		img{
+			width: 75px;
 		}
 	}
 }
@@ -78,7 +78,6 @@
 			width: 100%;
 			height: auto;
 		}
-
 	}
 	.adventure-post:nth-child(3){
 		height: 270px;

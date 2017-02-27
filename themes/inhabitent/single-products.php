@@ -13,9 +13,9 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          <header class="entry-header">
+          <div class="img-wrapper">
             <?php if ( has_post_thumbnail() ) : ?>
-              <?php the_post_thumbnail(); ?>
+              <?php the_post_thumbnail('large'); ?>
                 <?php endif; ?>
 
 
@@ -26,12 +26,12 @@ get_header(); ?>
                     </div>
                     <!-- .entry-metaaaaa -->
                     <?php endif; ?>
-          </header>
+          </div>
           <!-- .entry-headerrrrr -->
 
           <div class="entry-content">
             <?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
-			<p><?php echo CFS()->get( 'product-price' ); ?></p>
+			<p class='single-price'><?php echo CFS()->get( 'product-price' ); ?></p>
               <?php the_content(); ?>
                 <div class='social'>
                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Like</a>

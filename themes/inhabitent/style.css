@@ -844,19 +844,21 @@ a {
 .home .products-container {
   width: 1120px;
   margin: 0 auto 3rem; }
-  .home .products-container .product-categories {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    text-align: center; }
-    .home .products-container .product-categories .prod-category-wrapper {
-      -ms-flex-preferred-size: 23%;
-          flex-basis: 23%;
-      border: 1px solid black;
-      margin: 0 2rem; }
-      .home .products-container .product-categories .prod-category-wrapper img {
-        width: 75px; }
+
+.home .product-categories {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  text-align: center; }
+
+.home .prod-category-wrapper {
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  border: 1px solid black;
+  margin: 0 2rem; }
+  .home .prod-category-wrapper img {
+    width: 75px; }
 
 .journal-container {
   width: 1120px;
@@ -1027,14 +1029,52 @@ a {
   font-family: 'Merriweather Web', sans-serif;
   margin-bottom: 2rem; }
 
+.single-products .site-content {
+  width: 1120px;
+  margin: 0 auto;
+  padding-top: 50px; }
+
 .single-products #primary {
   width: 100%;
   padding: 0;
-  border-right: none; }
+  border-right: none;
+  padding: 3rem 0 3rem 0; }
 
 .single-products .products {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.single-products .img-wrapper {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%; }
+
+.single-products .entry-content {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  margin: 0;
+  line-height: 1.5; }
+
+.single-products .entry-title {
+  color: #d99054;
+  font-size: 2.4rem;
+  line-height: 1;
+  margin-bottom: 0.5rem; }
+
+.single-products .single-price {
+  font-family: 'NovecentoSans' ,sans-serif;
+  font-size: 1.8rem;
+  margin: 0; }
+
+.single-products .social {
+  margin-bottom: 5rem; }
+  .single-products .social a {
+    padding: 0.5rem 1.3rem;
+    border: 1px solid black;
+    color: black; }
+  .single-products .social .fa {
+    margin-right: 0.5rem; }
 
 .blog .blog-wrapper {
   display: -ms-flexbox;
