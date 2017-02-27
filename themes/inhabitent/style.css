@@ -823,7 +823,13 @@ a {
   #masthead .search-nav .search-field {
     border: none;
     padding: 0;
-    display: none; }
+    display: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: 'NovecentoSans', sans-serif; }
+
+#masthead label {
+  display: inline; }
 
 .contact {
   display: -ms-flexbox;
@@ -858,12 +864,31 @@ a {
   text-align: center; }
 
 .home .prod-category-wrapper {
-  -ms-flex-preferred-size: 23%;
-      flex-basis: 23%;
-  border: 1px solid black;
-  margin: 0 2rem; }
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  -ms-flex: 0 1 23.5%;
+  flex: 0 1 23.5%;
+  max-width: 23.5%;
+  padding: 0.75rem 0.75rem 2rem; }
   .home .prod-category-wrapper img {
     width: 75px; }
+
+.home h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3.75rem;
+  text-align: center; }
+
+.home .category-link {
+  background: #248a83;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: .9rem;
+  padding: .75rem 1.5rem;
+  text-transform: uppercase; }
 
 .journal-container {
   width: 1120px;
@@ -877,11 +902,43 @@ a {
     .journal-container .journal .journal-post {
       -ms-flex-preferred-size: 32%;
           flex-basis: 32%;
-      border: 1px solid black; }
+      border: 1px solid #e1e1e1; }
     .journal-container .journal .journal-img {
-      height: 250px; }
+      background-color: #e1e1e1;
+      height: 250px;
+      overflow: hidden;
+      position: relative; }
     .journal-container .journal img {
-      height: 100%; }
+      left: 50%;
+      max-height: 250px;
+      max-width: none;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -52%);
+      width: auto; }
+    .journal-container .journal .journal-text-wrapper {
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      padding: .75rem;
+      position: relative; }
+    .journal-container .journal .read-more {
+      position: absolute;
+      bottom: .75rem;
+      left: .75rem;
+      border: 1px solid #000;
+      color: #000;
+      padding: .75rem 1.5rem; }
+    .journal-container .journal h3 {
+      font-size: 1.4rem;
+      margin-bottom: 3.75rem;
+      text-transform: uppercase;
+      font-family: 'NovecentoSans', sans-serif;
+      line-height: 1.2; }
+    .journal-container .journal .journal-meta {
+      font-size: 0.75rem;
+      margin: 0; }
 
 .adventures-container {
   width: 1120px;
@@ -902,6 +959,9 @@ a {
     height: 540px;
     width: 540px;
     margin-right: 20px; }
+    .adventures-container .adventure-post:first-child h3 {
+      font-size: 3rem;
+      font-weight: 300; }
   .adventures-container .adventure-post:nth-child(2) {
     height: 250px;
     width: 560px;
@@ -909,16 +969,26 @@ a {
     .adventures-container .adventure-post:nth-child(2) img {
       width: 100%;
       height: auto; }
+    .adventures-container .adventure-post:nth-child(2) h3 {
+      font-size: 2.4rem;
+      font-weight: 300; }
   .adventures-container .adventure-post:nth-child(3) {
     height: 270px;
     width: 270px;
     margin-right: 20px; }
+    .adventures-container .adventure-post:nth-child(3) h3 {
+      font-size: 1.6rem;
+      font-weight: 300; }
   .adventures-container .adventure-post:nth-child(4) {
     height: 270px;
     width: 270px; }
+    .adventures-container .adventure-post:nth-child(4) h3 {
+      font-size: 1.6rem;
+      font-weight: 300; }
   .adventures-container .adventure-text-wrapper {
     position: absolute;
-    top: 0; }
+    top: 0;
+    margin: 1.5rem; }
   .adventures-container .clearfix:after {
     visibility: hidden;
     display: block;
@@ -926,6 +996,29 @@ a {
     content: " ";
     clear: both;
     height: 0; }
+  .adventures-container h3 {
+    color: #fff;
+    line-height: 1.2; }
+  .adventures-container .read-more {
+    position: absolute;
+    bottom: .75rem;
+    left: .75rem;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: .25rem 1.5rem;
+    bottom: -25px; }
+  .adventures-container .more-adventures {
+    margin-top: 2.25rem; }
+    .adventures-container .more-adventures a {
+      font-size: 1.2rem;
+      background: #248a83;
+      border: none;
+      border-radius: 0;
+      color: #fff;
+      cursor: pointer;
+      font-family: Novecento Sans Web,sans-serif;
+      padding: .75rem 1.5rem;
+      text-transform: uppercase; }
 
 #comments .comment-list {
   margin: 0;
@@ -962,6 +1055,10 @@ a {
 #comments cite {
   font-style: normal;
   font-weight: bold; }
+
+#comments h3 {
+  text-transform: uppercase;
+  font-family: 'NovecentoSans' ,sans-serif; }
 
 .post-type-archive-products .site-content #primary,
 .tax-product-type .site-content #primary {
@@ -1117,19 +1214,31 @@ a {
   .single-products .social .fa {
     margin-right: 0.5rem; }
 
-.blog .blog-wrapper {
+.blog .blog-wrapper,
+.date .blog-wrapper,
+.tag .blog-wrapper,
+.category .blog-wrapper {
   display: -ms-flexbox;
   display: flex; }
 
-.blog .hentry {
+.blog .hentry,
+.date .hentry,
+.tag .hentry,
+.category .hentry {
   margin-bottom: 4.5rem; }
 
-.blog .entry-header {
+.blog .entry-header,
+.date .entry-header,
+.tag .entry-header,
+.category .entry-header {
   position: relative;
   line-height: 0;
   color: #fff; }
 
-.blog .entry-title {
+.blog .entry-title,
+.date .entry-title,
+.tag .entry-title,
+.category .entry-title {
   position: absolute;
   left: 0;
   top: 0;
@@ -1137,17 +1246,26 @@ a {
   padding: 1rem 1.5rem;
   width: 74%;
   margin-top: 2.25rem; }
-  .blog .entry-title a {
+  .blog .entry-title a,
+  .date .entry-title a,
+  .tag .entry-title a,
+  .category .entry-title a {
     color: #fff; }
 
-.blog .entry-meta {
+.blog .entry-meta,
+.date .entry-meta,
+.tag .entry-meta,
+.category .entry-meta {
   position: absolute;
   background-color: #248a83;
   padding: 1rem;
   bottom: 0;
   right: 0; }
 
-.blog .read-more {
+.blog .read-more,
+.date .read-more,
+.tag .read-more,
+.category .read-more {
   padding: .75rem 1.5rem;
   border: 1px solid black;
   color: black;
@@ -1155,7 +1273,10 @@ a {
   font-family: 'NovecentoSans', sans-serif;
   text-transform: uppercase; }
 
-.blog .read-more:hover {
+.blog .read-more:hover,
+.date .read-more:hover,
+.tag .read-more:hover,
+.category .read-more:hover {
   background-color: #248a83;
   border: 1px solid #248a83;
   color: #fff; }

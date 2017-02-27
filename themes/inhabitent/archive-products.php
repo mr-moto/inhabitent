@@ -44,7 +44,7 @@ get_header(); ?>
 						<div class="img-wrapper">
 							<a href="<?php the_permalink(); ?>" rel="product"> 
 							<?php if ( has_post_thumbnail() ) : ?>
-								<?php the_post_thumbnail(); ?>
+								<?php the_post_thumbnail('large'); ?>
 							</a>
 						</div>
 						<?php endif; ?>

@@ -96,7 +96,7 @@ function inhabitent_adventure_css() {
 		return;
     }
         $adv_img_css = "
-        .adv-link img{
+        .adv-link{
         background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% )
         }";
 
@@ -111,7 +111,6 @@ function inhabitent_adventure_css() {
 	function product_order( $query ) {
     if ( is_post_type_archive( 'products' ) || is_tax('product-type')) {
         $query->set( 'posts_per_page', 16 );
-        $query->set('orderby', 'name' );
         $query->set('order', 'ASC' );
         return;
     }

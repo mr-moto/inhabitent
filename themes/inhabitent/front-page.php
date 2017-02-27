@@ -49,7 +49,7 @@ get_header(); ?>
             ?>
             </div>
             <div class="journal-text-wrapper">
-                <p><?php echo get_the_date(); ?> / <?php comments_number(); ?> </p>
+                <p class='journal-meta'><?php echo get_the_date(); ?> / <?php comments_number(); ?> </p>
                 <a href=" <?php the_permalink(); ?> "> <h3> <?php the_title(); ?> </h3> </a>
                 <a class="read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"> Read Entry </a>
             </div>
@@ -80,10 +80,10 @@ get_header(); ?>
             </div>
         </div>
         <?php endforeach; ?>
-        <p>
+    </div>
+    <p class='more-adventures'>
             <a href="<?php echo get_post_type_archive_link( 'adventures' ); ?>">More Adventures</a>
         </p>
-    </div>
 </section>
 
 <?php get_footer(); ?>
