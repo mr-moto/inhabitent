@@ -39,17 +39,13 @@ input[type="password"],
 input[type="search"],
 textarea {
 	color: #666;
-	background-color: transparent;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	text-transform: uppercase;
-	margin-left: .75rem;
-	width: 190px;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    margin-left: 0;
+    width: 190px;
 
 	&:focus {
-		color: #fff;
-		outline: none;
-		
+		outline: none;	
 	}
 }
 
@@ -65,3 +61,12 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+    label{
+        color: #2f1339;
+        display: block;
+        font-family: Novecento Sans Web,sans-serif;
+        font-size: 17.6px;
+        font-size: 1.1rem;
+        margin-bottom: .5rem;
+        text-transform: uppercase;
+    }   
