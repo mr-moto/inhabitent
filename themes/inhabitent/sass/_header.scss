@@ -16,6 +16,9 @@
         width: 50px;
         margin: 0;
     }
+    .search-field {
+        color: #000;
+    }
 }
 
 .site-header-reverse {
@@ -35,6 +38,9 @@
         height: 33px;
         width: 50px;
         margin: 0;
+    }
+    .search-field {
+        color: #fff;
     }
 }
 
@@ -63,7 +69,6 @@
             display: inline;
         }
         .search-field {
-            color: #fff;
             border: none;
             padding: 0;
             display: none;

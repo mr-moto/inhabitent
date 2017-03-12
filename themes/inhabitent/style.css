@@ -794,6 +794,8 @@ a {
     height: 33px;
     width: 50px;
     margin: 0; }
+  .site-header .search-field {
+    color: #000; }
 
 .site-header-reverse {
   width: 100%;
@@ -811,6 +813,8 @@ a {
     height: 33px;
     width: 50px;
     margin: 0; }
+  .site-header-reverse .search-field {
+    color: #fff; }
 
 #masthead .container {
   -ms-flex-pack: justify;
@@ -835,7 +839,6 @@ a {
   #masthead .search-nav .search-button {
     display: inline; }
   #masthead .search-nav .search-field {
-    color: #fff;
     border: none;
     padding: 0;
     display: none;
