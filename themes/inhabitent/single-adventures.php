@@ -31,7 +31,7 @@ get_header(); ?>
 
           <div class="entry-content">
             <?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
-			<p>By <?php the_author(); ?></p>
+			<p class='adv-author'>By <?php the_author(); ?></p>
               <?php the_content(); ?>
                 <div class='social'>
                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Like</a>

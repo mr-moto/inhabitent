@@ -778,6 +778,19 @@ a {
   margin-left: 0;
   padding-left: 0; }
 
+.social {
+  margin-bottom: 5rem; }
+  .social a {
+    padding: 0.5rem 1.3rem;
+    border: 1px solid black;
+    color: black; }
+    .social a:hover {
+      background-color: #248a83;
+      border: 1px solid #248a83;
+      color: #fff; }
+  .social .fa {
+    margin-right: 0.5rem; }
+
 .site-header {
   padding: 0.5rem 0;
   background-color: rgba(255, 255, 255, 0.85);
@@ -1223,15 +1236,6 @@ a {
   font-size: 1.8rem;
   margin: 0; }
 
-.single-products .social {
-  margin-bottom: 5rem; }
-  .single-products .social a {
-    padding: 0.5rem 1.3rem;
-    border: 1px solid black;
-    color: black; }
-  .single-products .social .fa {
-    margin-right: 0.5rem; }
-
 .blog .blog-wrapper,
 .date .blog-wrapper,
 .tag .blog-wrapper,
@@ -1345,15 +1349,6 @@ a {
   .single-post .entry-footer a {
     color: #248a83; }
 
-.single-post .social {
-  margin-bottom: 5rem; }
-  .single-post .social a {
-    padding: 0.5rem 1.3rem;
-    border: 1px solid black;
-    color: black; }
-  .single-post .social .fa {
-    margin-right: 0.5rem; }
-
 .page-id-22 #primary {
   width: 100%;
   padding: 0;
@@ -1435,7 +1430,19 @@ a {
   padding-top: 0; }
 
 .single-adventures h2 {
-  text-align: center; }
+  text-align: center;
+  font-size: 2.4rem;
+  text-align: left; }
+
+.single-adventures .adv-author {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: Novecento, sans-serif; }
+
+.single-adventures .entry-content {
+  margin: 0 auto;
+  margin-top: 3rem;
+  max-width: 800px; }
 
 .error404 .site-content {
   width: 1120px;

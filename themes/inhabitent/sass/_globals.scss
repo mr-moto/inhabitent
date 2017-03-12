@@ -72,3 +72,20 @@ a {
     margin-left: 0;
     padding-left: 0;
 }
+
+.social {
+    margin-bottom: 5rem;
+    a {
+        padding: 0.5rem 1.3rem;
+        border: 1px solid black;
+        color: black;
+        &:hover {
+            background-color: #248a83;
+            border: 1px solid #248a83;
+            color: #fff;
+        }
+    }
+    .fa {
+        margin-right: 0.5rem;
+    }
+}
