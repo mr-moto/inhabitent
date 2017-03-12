@@ -1,9 +1,6 @@
 .post-type-archive-adventures {
     #primary {
-        width: 1120px;
-        padding: 0;
-        border: none;
-        margin: 0 auto;
+        @include archive-primary;
     }
     .adventure-container {
         display: flex;
@@ -37,7 +34,7 @@
     }
     .entry-title {
         font-size: 3rem;
-        font-family: 'Merriweather Web', sans-serif;
+        font-family: $font-merriweather;
         font-weight: 300;
         text-transform: none;
     }

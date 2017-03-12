@@ -35,12 +35,12 @@
         text-align: center;
     }
     .category-link {
-        background: #248a83;
+        background: $color-clicks;
         border: none;
         border-radius: 0;
         color: #fff;
         cursor: pointer;
-        font-family: Novecento Sans Web, sans-serif;
+        font-family: $font-novecento, sans-serif;
         font-size: .9rem;
         padding: .75rem 1.5rem;
         text-transform: uppercase;
@@ -92,7 +92,7 @@
             font-size: 1.4rem;
             margin-bottom: 3.75rem;
             text-transform: uppercase;
-            font-family: 'NovecentoSans', sans-serif;
+            font-family: $font-novecento, sans-serif;
             line-height: 1.2;
         }
         .journal-meta {
@@ -188,12 +188,12 @@
         margin-top: 2.25rem;
         a {
             font-size: 1.2rem;
-            background: #248a83;
+            background: $color-clicks;
             border: none;
             border-radius: 0;
             color: #fff;
             cursor: pointer;
-            font-family: Novecento Sans Web, sans-serif;
+            font-family: $font-novecento, sans-serif;
             padding: .75rem 1.5rem;
             text-transform: uppercase;
         }

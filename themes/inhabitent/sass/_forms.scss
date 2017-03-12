@@ -11,9 +11,9 @@ input[type="reset"],
 input[type="submit"] {
     border: none;
     border-radius: 0px;
-    background: #248a83;
+    background: $color-clicks;
     color: #fff;
-    font-family: 'NovecentoSans';
+    font-family: $font-novecento;
     text-transform: uppercase;
     font-size: 0.9rem;
     line-height: 1;
@@ -63,7 +63,7 @@ textarea {
 label {
     color: #2f1339;
     display: block;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font-novecento, sans-serif;
     font-size: 17.6px;
     font-size: 1.1rem;
     margin-bottom: .5rem;

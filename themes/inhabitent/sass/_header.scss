@@ -6,8 +6,8 @@
     width: 100%;
     z-index: 1;
     a {
-        color: #248a83;
-        font-family: "NovecentoSans"
+        color: $color-clicks;
+        font-family: $font-novecento;
     }
     h1 {
         background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
@@ -30,7 +30,7 @@
     border-bottom: none;
     a {
         color: #fff;
-        font-family: "NovecentoSans"
+        font-family: $font-novecento
     }
     h1 {
         background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
@@ -74,7 +74,7 @@
             display: none;
             background-color: transparent;
             text-transform: uppercase;
-            font-family: 'NovecentoSans', sans-serif;
+            font-family: $font-novecento, sans-serif;
         }
     }
     label {

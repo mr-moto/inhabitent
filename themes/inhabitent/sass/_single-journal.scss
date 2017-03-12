@@ -16,7 +16,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        background-color: #248a83;
+        background-color: $color-clicks;
         padding: 1rem 1.5rem;
         width: 74%;
         margin-top: 2.25rem;
@@ -28,12 +28,12 @@
     }
     .entry-meta {
         position: absolute;
-        background-color: #248a83;
+        background-color: $color-clicks;
         padding: 1rem;
         bottom: 0;
         right: 0;
         text-transform: uppercase;
-        font-family: 'NovecentoSans';
+        font-family: $font-novecento;
     }
     .comments-link {
         a {
@@ -41,13 +41,13 @@
         }
     }
     .entry-footer {
-        font-family: 'NovecentoSans';
+        font-family: $font-novecento;
         text-transform: uppercase;
         .cat-links {
             margin-right: 1.5rem;
         }
         a {
-            color: #248a83;
+            color: $color-clicks;
         }
     }
 }

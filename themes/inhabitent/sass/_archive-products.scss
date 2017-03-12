@@ -1,10 +1,7 @@
 .post-type-archive-products .site-content,
 .tax-product-type .site-content {
     #primary {
-        width: 1120px;
-        margin: 0 auto;
-        padding: 0;
-        border: none;
+        @include archive-primary;
     }
     .site-main {
         padding-top: 1rem;
@@ -12,7 +9,7 @@
     }
     .page-header {
         text-align: center;
-        font-family: 'NovecentoSans';
+        font-family: $font-novecento;
         border-bottom: 1px dashed #c8c8c8;
         margin-bottom: 3rem;
     }
@@ -63,7 +60,7 @@
         display: flex;
         justify-content: space-between;
         align-content: center;
-        font-family: 'Merriweather Web';
+        font-family: $font-merriweather;
         padding: .75rem 1rem;
     }
     h2 {
@@ -71,7 +68,7 @@
         margin: 0;
         font-weight: 300;
         letter-spacing: 0;
-        font-family: 'Merriweather Web';
+        font-family: $font-merriweather;
         text-transform: none;
         overflow: hidden;
         white-space: nowrap;
@@ -82,7 +79,7 @@
         content: '..................................';
     }
     .taxonomy-description {
-        font-family: 'Merriweather Web', sans-serif;
+        font-family: $font-merriweather, sans-serif;
         margin-bottom: 2rem;
     }
 }

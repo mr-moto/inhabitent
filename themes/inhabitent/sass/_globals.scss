@@ -1,18 +1,18 @@
 body {
     font-size: 16px;
-    font-family: 'Merriweather Web';
+    font-family: $font-merriweather;
     line-height: 1.75;
 }
 
 h1 {
-    font-family: 'NovecentoSans';
+    font-family: $font-novecento;
     font-size: 3rem;
     letter-spacing: 2px;
     line-height: 1.25;
 }
 
 h2 {
-    font-family: 'NovecentoSans';
+    font-family: $font-novecento;
     line-height: 1.25;
     font-size: 2rem;
     letter-spacing: 2px;
@@ -24,7 +24,7 @@ h3 {
 }
 
 a {
-    color: #248a83;
+    color: $color-clicks;
     text-decoration: none;
 }
 
@@ -80,8 +80,8 @@ a {
         border: 1px solid black;
         color: black;
         &:hover {
-            background-color: #248a83;
-            border: 1px solid #248a83;
+            background-color: $color-clicks;
+            border: 1px solid $color-clicks;
             color: #fff;
         }
     }

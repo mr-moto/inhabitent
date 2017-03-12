@@ -17,7 +17,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        background-color: #248a83;
+        background-color: $color-clicks;
         padding: 1rem 1.5rem;
         width: 74%;
         margin-top: 2.25rem;
@@ -27,7 +27,7 @@
     }
     .entry-meta {
         position: absolute;
-        background-color: #248a83;
+        background-color: $color-clicks;
         padding: 1rem;
         bottom: 0;
         right: 0;
@@ -37,12 +37,12 @@
         border: 1px solid black;
         color: black;
         font-size: 0.9rem;
-        font-family: 'NovecentoSans', sans-serif;
+        font-family: $font-novecento, sans-serif;
         text-transform: uppercase;
     }
     .read-more:hover {
-        background-color: #248a83;
-        border: 1px solid #248a83;
+        background-color: $color-clicks;
+        border: 1px solid $color-clicks;
         color: #fff;
     }
 }

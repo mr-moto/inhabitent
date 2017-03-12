@@ -10,3 +10,11 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+//archive #primary
+@mixin archive-primary {
+    width: 1120px;
+    padding: 0;
+    border: none;
+    margin: 0 auto;
+}
