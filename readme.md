@@ -30,6 +30,7 @@ This is the biggest and most challenging project I have worked on so far. It too
 # CHANGELOG
 ## 2017-03-11
 * Styled 404 page
+* Styled singles adventure page
 * Screenshot added to Readme
 
 ## 2017-02-27
