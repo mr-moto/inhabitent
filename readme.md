@@ -1,5 +1,7 @@
 Inhabitent Camping Supply Co. (RED Academy Project)
 ======
+![inhabitent-browser-mockup](https://cloud.githubusercontent.com/assets/24904987/23828146/aa62d498-067d-11e7-80bd-b214bc303b27.png)
+
 
 ## Project
 A multi-page wordpress powered website for a camping supply company. The objective for this project is to build a CMS site using WordPress.
@@ -23,3 +25,12 @@ This is the biggest and most challenging project I have worked on so far. It too
 * Implement custom screenshot
 * Create mobile and tablet sites (make responsive)
 * Finish styling adventure pages
+
+---
+# CHANGELOG
+## 2017-03-11
+* Styled 404 page
+* Screenshot added to Readme
+
+## 2017-02-27
+* Project Hand-in
