@@ -21,6 +21,7 @@ function red_starter_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
 
+
 // custom login for theme
 function wp_admin_logo() {
      echo '<style type="text/css">                                                                   
@@ -35,10 +36,12 @@ function wp_admin_logo() {
 }
 add_action('login_head', 'wp_admin_logo');
 
-function admin_logo_url( $url ) {
-    return get_bloginfo( 'url' );
+
+function admin_logo_url() {
+    return home_url();
 }
 add_filter( 'login_headerurl', 'admin_logo_url' );
+
 
 /**
  * Changing product archive title.
@@ -62,8 +65,6 @@ function adventure_archive_title($title) {
 	return $title;
 }
 add_filter('get_the_archive_title', 'adventure_archive_title');
-
-
 
 
 function inhabitent_about_css() {
@@ -116,6 +117,7 @@ function inhabitent_adventure_css() {
     }
 }
 add_action( 'pre_get_posts', 'product_order');
+
 
 function adventures_order( $query ) {
     if ( is_post_type_archive( 'adventures' )) {

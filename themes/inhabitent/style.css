@@ -279,14 +279,22 @@ textarea {
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both; }
 
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -306,16 +314,21 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -340,9 +353,12 @@ body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
 
-blockquote, q {
+blockquote,
+q {
   quotes: "" ""; }
-  blockquote:before, blockquote:after, q:before, q:after {
+  blockquote:before, blockquote:after,
+  q:before,
+  q:after {
     content: ""; }
 
 hr {
@@ -351,7 +367,8 @@ hr {
   height: 1px;
   margin-bottom: 1.5rem; }
 
-ul, ol {
+ul,
+ol {
   margin: 0 0 1.5rem 3rem; }
 
 ul {
@@ -447,7 +464,7 @@ textarea {
 label {
   color: #2f1339;
   display: block;
-  font-family: Novecento Sans Web,sans-serif;
+  font-family: Novecento Sans Web, sans-serif;
   font-size: 17.6px;
   font-size: 1.1rem;
   margin-bottom: .5rem;
@@ -697,10 +714,6 @@ object {
 .gallery-caption {
   display: block; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
 body {
   font-size: 16px;
   font-family: 'Merriweather Web';
@@ -709,7 +722,8 @@ body {
 h1 {
   font-family: 'NovecentoSans';
   font-size: 3rem;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  line-height: 1.25; }
 
 h2 {
   font-family: 'NovecentoSans';
@@ -886,7 +900,7 @@ a {
   border-radius: 0;
   color: #fff;
   cursor: pointer;
-  font-family: Novecento Sans Web,sans-serif;
+  font-family: Novecento Sans Web, sans-serif;
   font-size: .9rem;
   padding: .75rem 1.5rem;
   text-transform: uppercase; }
@@ -1017,7 +1031,7 @@ a {
       border-radius: 0;
       color: #fff;
       cursor: pointer;
-      font-family: Novecento Sans Web,sans-serif;
+      font-family: Novecento Sans Web, sans-serif;
       padding: .75rem 1.5rem;
       text-transform: uppercase; }
 
@@ -1059,7 +1073,7 @@ a {
 
 #comments h3 {
   text-transform: uppercase;
-  font-family: 'NovecentoSans' ,sans-serif; }
+  font-family: 'NovecentoSans', sans-serif; }
 
 .post-type-archive-products .site-content #primary,
 .tax-product-type .site-content #primary {
@@ -1202,7 +1216,7 @@ a {
   margin-bottom: 0.5rem; }
 
 .single-products .single-price {
-  font-family: 'NovecentoSans' ,sans-serif;
+  font-family: 'NovecentoSans', sans-serif;
   font-size: 1.8rem;
   margin: 0; }
 
@@ -1405,7 +1419,7 @@ a {
 
 .post-type-archive-adventures .entry-title {
   font-size: 3rem;
-  font-family: 'Merriweather Web',sans-serif;
+  font-family: 'Merriweather Web', sans-serif;
   font-weight: 300;
   text-transform: none; }
 
@@ -1419,6 +1433,34 @@ a {
 
 .single-adventures h2 {
   text-align: center; }
+
+.error404 .site-content {
+  width: 1120px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex; }
+
+.error404 .page-title {
+  margin-top: 0;
+  font-size: 2.4rem;
+  text-transform: uppercase; }
+
+.error404 .search-button {
+  display: none; }
+
+.error404 fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: .75rem; }
+  .error404 fieldset input {
+    font-family: Merriweather Web; }
+
+.error404 .search-field {
+  line-height: 1.75; }
+
+.error404 .widget {
+  margin-bottom: 3rem; }
 
 #colophon {
   background: url(../../images/dark-wood.png); }
@@ -1444,7 +1486,7 @@ a {
     #colophon .contact-text a {
       color: #fff; }
   #colophon .site-info {
-    font-family: Novecento Sans Web,sans-serif;
+    font-family: Novecento Sans Web, sans-serif;
     padding: 1.5rem 0;
     text-align: center;
     text-transform: uppercase;

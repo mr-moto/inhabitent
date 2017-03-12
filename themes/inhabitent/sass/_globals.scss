@@ -1,58 +1,72 @@
-body{
+body {
     font-size: 16px;
     font-family: 'Merriweather Web';
     line-height: 1.75;
 }
-h1{
-    font-family:'NovecentoSans';
+
+h1 {
+    font-family: 'NovecentoSans';
     font-size: 3rem;
-        letter-spacing: 2px;
+    letter-spacing: 2px;
+    line-height: 1.25;
 }
-h2{
+
+h2 {
     font-family: 'NovecentoSans';
     line-height: 1.25;
     font-size: 2rem;
-        letter-spacing: 2px;
-        text-transform: uppercase;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
-h3{
+
+h3 {
     font-size: 1.8rem;
 }
+
 a {
     color: #248a83;
     text-decoration: none;
 }
-#site-navigation{
+
+#site-navigation {
     display: flex;
 }
-.container{
+
+.container {
     width: 1120px;
     display: flex;
     margin: 0 auto;
 }
-.sidebar-container{
+
+.sidebar-container {
     width: 1120px;
     display: flex;
     margin: 0 auto;
 }
-.site-content{
+
+.site-content {
     padding-top: 50px;
 }
-#primary{
+
+#primary {
     width: 73%;
     padding: 3rem 3.5rem 0 0;
     border-right: 1px solid grey;
 }
-#secondary{
+
+#secondary {
     width: 27%;
     padding: 3rem 0 0 3.5rem;
 }
-.entry-title{
+
+.entry-title {
     margin-top: 0;
 }
-.widget h2{
+
+.widget h2 {
     font-size: 1.5rem;
 }
+
 .widget ul {
     list-style-type: none;
     margin-left: 0;

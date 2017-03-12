@@ -1,4 +1,4 @@
-Inhabitent Camping Supply Co.
+Inhabitent Camping Supply Co. (RED Academy Project)
 ======
 
 ## Project

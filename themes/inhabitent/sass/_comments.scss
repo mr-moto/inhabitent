@@ -1,21 +1,21 @@
-#comments{
-    .comment-list{
+#comments {
+    .comment-list {
         margin: 0;
         padding: 0;
         list-style: none;
     }
-    .comment-list>li{
-            border-bottom: 1px solid #e1e1e1;
-        }
-    .children{
+    .comment-list>li {
+        border-bottom: 1px solid #e1e1e1;
+    }
+    .children {
         list-style: none;
         margin-bottom: 0;
         margin-left: 1.5rem;
-        li{
+        li {
             border-top: 1px solid #e1e1e1
         }
     }
-    .comment{
+    .comment {
         padding-top: 1.5rem
     }
     .comment article {
@@ -28,15 +28,15 @@
         overflow: hidden;
         width: 64px;
     }
-    .comment-body{
+    .comment-body {
         display: flex;
     }
     cite {
         font-style: normal;
         font-weight: bold;
     }
-    h3{
+    h3 {
         text-transform: uppercase;
-        font-family: 'NovecentoSans' ,sans-serif;
+        font-family: 'NovecentoSans', sans-serif;
     }
 }

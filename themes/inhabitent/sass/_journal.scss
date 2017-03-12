@@ -1,19 +1,19 @@
 .blog,
 .date,
 .tag,
-.category{
-    .blog-wrapper{
+.category {
+    .blog-wrapper {
         display: flex;
     }
-    .hentry{
+    .hentry {
         margin-bottom: 4.5rem;
     }
-    .entry-header{
+    .entry-header {
         position: relative;
         line-height: 0;
         color: #fff;
     }
-    .entry-title{
+    .entry-title {
         position: absolute;
         left: 0;
         top: 0;
@@ -21,18 +21,18 @@
         padding: 1rem 1.5rem;
         width: 74%;
         margin-top: 2.25rem;
-        a{
+        a {
             color: #fff;
         }
     }
-    .entry-meta{
+    .entry-meta {
         position: absolute;
         background-color: #248a83;
         padding: 1rem;
         bottom: 0;
         right: 0;
     }
-    .read-more{
+    .read-more {
         padding: .75rem 1.5rem;
         border: 1px solid black;
         color: black;
@@ -40,7 +40,7 @@
         font-family: 'NovecentoSans', sans-serif;
         text-transform: uppercase;
     }
-    .read-more:hover{
+    .read-more:hover {
         background-color: #248a83;
         border: 1px solid #248a83;
         color: #fff;

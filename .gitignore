@@ -27,6 +27,7 @@ themes/inhabitent/node_modules/
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
+themes/inhabitent/.vscode
 
 # Ignore logs and databases #
 *.log

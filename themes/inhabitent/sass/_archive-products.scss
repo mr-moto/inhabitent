@@ -1,26 +1,26 @@
 .post-type-archive-products .site-content,
-.tax-product-type .site-content{
-    #primary{
+.tax-product-type .site-content {
+    #primary {
         width: 1120px;
         margin: 0 auto;
         padding: 0;
         border: none;
     }
-    .site-main{
+    .site-main {
         padding-top: 1rem;
         padding-bottom: 4rem;
     }
-    .page-header{
+    .page-header {
         text-align: center;
         font-family: 'NovecentoSans';
         border-bottom: 1px dashed #c8c8c8;
         margin-bottom: 3rem;
     }
-    .page-title{
+    .page-title {
         font-size: 2.4rem;
         text-transform: uppercase;
     }
-    .prod-list{
+    .prod-list {
         list-style-type: none;
         display: flex;
         padding-left: 0;
@@ -29,44 +29,44 @@
         font-size: 1.2rem;
         margin-bottom: 3rem;
     }
-    li{
+    li {
         margin: 0 1.5rem;
         text-transform: uppercase;
     }
-    .product-container{
+    .product-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .single-product{
+    .single-product {
         flex-basis: 23%;
         max-width: 23%;
         margin-bottom: 1.5rem;
         border: 1px solid #e1e1e1;
     }
-    .img-wrapper{
+    .img-wrapper {
         height: 245px;
         position: relative;
         overflow: hidden;
         background-color: #e1e1e1;
-        img{
+        img {
             height: 255px;
             position: absolute;
             max-width: none;
             top: 48%;
             width: auto;
             left: 50%;
-            transform: translate(-50%,-52%);
+            transform: translate(-50%, -52%);
         }
     }
-    .product-text{
+    .product-text {
         display: flex;
         justify-content: space-between;
         align-content: center;
         font-family: 'Merriweather Web';
         padding: .75rem 1rem;
     }
-    h2{
+    h2 {
         font-size: 1rem;
         margin: 0;
         font-weight: 300;
@@ -78,10 +78,10 @@
         line-height: 2;
     }
     h2:after {
-            width: 0;
-            content: '..................................';
-        }
-    .taxonomy-description{
+        width: 0;
+        content: '..................................';
+    }
+    .taxonomy-description {
         font-family: 'Merriweather Web', sans-serif;
         margin-bottom: 2rem;
     }

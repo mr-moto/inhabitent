@@ -1,0 +1,30 @@
+.error404 {
+    .site-content {
+        width: 1120px;
+        margin: 0 auto;
+        display: flex;
+    }
+    .page-title {
+        margin-top: 0;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+    }
+    .search-button {
+        display: none;
+    }
+    fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+        padding-bottom: .75rem;
+        input {
+            font-family: Merriweather Web;
+        }
+    }
+    .search-field {
+        line-height: 1.75;
+    }
+    .widget {
+        margin-bottom: 3rem;
+    }
+}
