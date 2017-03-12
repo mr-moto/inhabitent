@@ -20,7 +20,7 @@ A multi-page wordpress powered website for a camping supply company. The objecti
 This is the biggest and most challenging project I have worked on so far. It took some time to get used to wordpress and how to implement php but the more I used it the easier it got. The sheer amount of styling and coding in a short amount of time was quite overwhelming, but this challenge motivated me to try hard and succeed. My skills using the various coding languages have improved vastly with this project.
 
 ##TODO
-* Organize code (variables, sass nesting etc)
+* more variables, sass nesting etc
 * Make it look prettier
 * Implement custom screenshot
 * Create mobile and tablet sites (make responsive)
@@ -32,6 +32,8 @@ This is the biggest and most challenging project I have worked on so far. It too
 * Styled 404 page
 * Styled singles adventure page
 * Screenshot added to Readme
+* Theme screenshot
+* Added a few variables and mixins
 
 ## 2017-02-27
 * Project Hand-in
