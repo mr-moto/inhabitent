@@ -23,16 +23,17 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				
 					<div class="post">
-						<div class="img-wrapper">
-							<a class="adv-link" href="<?php the_permalink(); ?>" rel="product"> 
+						<div class="adv-wrapper">
+							<div class="img-wrapper"> 
 							<?php if ( has_post_thumbnail() ) : ?>
 								<?php the_post_thumbnail(); ?>
 						
                             <?php endif; ?>
                             <div class="adventure-text">
                                 <?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
+								<a class="read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"> Read Entry </a>
                             </div>
-							</a>
+							</div>
                         </div>
 					</div>
 				

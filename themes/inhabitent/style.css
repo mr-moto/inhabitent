@@ -1405,10 +1405,7 @@ a {
   overflow: hidden;
   margin-bottom: 2rem; }
 
-.post-type-archive-adventures .img-wrapper {
-  position: relative; }
-
-.post-type-archive-adventures .adv-link img {
+.post-type-archive-adventures .img-wrapper img {
   height: 550px;
   width: auto;
   max-width: none;
@@ -1416,16 +1413,33 @@ a {
   transform: translate(-50%, 0%);
   left: 50%; }
 
+.post-type-archive-adventures .img-wrapper::after {
+  background: rgba(0, 0, 0, 0.35);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 0; }
+
 .post-type-archive-adventures .adventure-text {
   position: absolute;
   color: #fff;
-  margin: 4.5rem 1rem; }
+  margin: 4.5rem 1rem;
+  z-index: 1; }
 
 .post-type-archive-adventures .entry-title {
   font-size: 3rem;
   font-family: merriweather, sans-serif;
   font-weight: 300;
   text-transform: none; }
+
+.post-type-archive-adventures .read-more {
+  position: absolute;
+  left: .75rem;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: .25rem 1.5rem;
+  bottom: -25px; }
 
 .single-adventures #primary {
   width: 100%;
