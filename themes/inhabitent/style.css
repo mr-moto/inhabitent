@@ -982,6 +982,12 @@ a {
     width: auto;
     left: 50%;
     transform: translate(-50%, -50%); }
+  .adventures-container .adventure-wrapper::after {
+    background: rgba(0, 0, 0, 0.35);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%; }
   .adventures-container .adventure-post {
     position: relative;
     float: left;

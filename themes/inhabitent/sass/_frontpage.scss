@@ -114,6 +114,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .adventure-wrapper::after {
+        background: rgba(0, 0, 0, .35);
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
     .adventure-post {
         position: relative;
         float: left;
